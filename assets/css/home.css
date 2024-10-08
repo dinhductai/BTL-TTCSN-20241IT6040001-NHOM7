@@ -1,0 +1,119 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header container */
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 50px;
+    background-color: #f8f8f8;
+  }
+  
+  /* Logo */
+  .logo img {
+    width: 150px;
+    height: auto;
+  }
+  
+  /* Form tìm kiếm */
+  .seach-form {
+    flex-grow: 5;
+    max-width: 500px;
+    margin-left: 20px;
+  }
+  
+  .seach-form form {
+    display: flex;
+    align-items: center;
+  }
+  
+  #stext {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+  }
+  
+  #sbutton {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    color: white;
+  }
+  
+  #sbutton i {
+    font-size: 16px;
+  }
+  
+  /* Tài khoản người dùng */
+  .user-account:focus .box-user {
+    display: block;
+  }
+  
+  .user-account {
+    position: relative;
+    outline: none; /* Tắt viền mặc định khi phần tử được focus nếu muốn */
+    flex-grow: 0,1;
+  }
+  
+  .box-user {
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: 150px;
+   
+  }
+  
+  
+  /* Box Hotline */
+  
+  /* Giỏ hàng */
+  .cart {
+    margin-left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .cart i {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  /* Hiệu ứng khi hover */
+  #sbutton:hover {
+    background-color: #0056b3;
+  }
+  
+  .user-account:hover i,
+  .cart:hover i {
+    color: #007bff;
+  }
+  
+#featured-products {
+    display: flex;
+    flex-wrap: wrap; /* Để các sản phẩm xuống dòng nếu quá nhiều */
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
+}
+
+#featured-products div {
+    flex: 1 1 200px; /* Đặt kích thước tối thiểu cho sản phẩm */
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}

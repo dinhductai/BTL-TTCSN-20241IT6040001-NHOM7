@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang chủ Laptop Store</title>
+  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a class="logo" href="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTxAYStJQspxDg_UK1gbYAEuo9X9BbZGrWIw&s" alt="Logo trang web">
+      </a>
+        <div class="seach-form" style="width: 80%;">
+          <form id="frm-seach" name="seach" action="/tim">
+            <input type="text" placeholder="Bạn muốn tìm sản phẩm gì " value name="q" id="stext" autocomplete="off">
+            <button type="submit" id="sbutton">
+              <i  class="fas fa-search"></i>
+
+            </button>
+          </form>
+          
+        </div>
+        <div class="user-account" tabindex="0">
+          <i class="fa-solid fa-user" style="width: 50px;height: 50px;font-size: 40px; position: relative;"></i>
+          <ul class="box-user">
+            <li><a href="">Thông tin cá nhân</a></li>
+            <li><a href="">Đơn hàng </a></li>
+            <li><a href="">Đăng xuất</a></li>
+          </ul>
+        </div>
+        
+        <div class="box-hotline">
+          <p class="hotline-text" style="display: flex;">
+            <i class="fa-solid fa-phone"></i>
+            <span style="color: red;">HOTLINE</span>
+          </p>
+          <p>0987589660</p>
+        </div>
+        
+        
+        <div class="cart">
+          <i class="fa-solid fa-cart-shopping" style="font-size: 43px;"></i>
+        </div>
+    </div>
+   
+    <h1>Chào mừng đến với Laptop Store</h1>
+    
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="product-list.html">Sản phẩm</a></li>
+      <li><a href="cart.html">Giỏ hàng</a></li>
+      <li><a href="login.html">Đăng nhập</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section >
+      <h2>Các sản phẩm nổi bật</h2>
+      <div id="featured-products">
+        <!-- Sản phẩm sẽ được load từ API -->
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
